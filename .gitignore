@@ -1,0 +1,23 @@
+# macOS
+.DS_Store
+
+# Java / Gradle (backend)
+backend/build/
+backend/.gradle/
+backend/.idea/
+backend/out/
+*.iml
+
+# Node / React (frontend)
+frontend/node_modules/
+frontend/build/
+
+# Environment files - never commit real secrets
+.env
+*.env
+!*.env.example
+
+# Editor / misc
+*.bak
+*.bak*
+*.log
