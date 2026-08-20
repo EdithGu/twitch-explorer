@@ -4,6 +4,8 @@ A full-stack content discovery app for Twitch — browse trending games, search 
 
 Built to practice designing a real REST API against a third-party OAuth-protected API (Twitch Helix), session-based auth, a relational data model, and a lightweight recommendation service — end to end, frontend to database.
 
+![Twitch Explorer — browse & recommendations](screenshots/twitch-explorer.png)
+
 ## Highlights
 
 - Designed a **content-based recommendation engine** that seeds candidate games from a user's favorite history, falls back to trending games for new/anonymous users, and excludes already-favorited items from the results.
@@ -96,13 +98,6 @@ App runs on http://localhost:3000 and proxies API requests to the backend.
 cd backend
 ./gradlew test
 ```
-
-## What I'd improve next
-
-- Add retry/circuit-breaker handling around Twitch API calls for rate-limit resilience
-- Add pagination for search results
-- Add integration tests for the recommendation endpoint
-- Set up a GitHub Actions CI pipeline to run tests on every push
 
 ## License
 
